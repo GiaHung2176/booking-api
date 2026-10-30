@@ -1,0 +1,9 @@
+spring:
+  config:
+    import: optional:file:.env[.properties]
+  datasource:
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+    url: jdbc:postgresql://localhost:5434/${POSTGRES_DATABASE}
+  jpa:
+    show-sql: true

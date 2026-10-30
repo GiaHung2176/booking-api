@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: booking-api 
+  jpa:
+    hibernate:
+      ddl-auto: validate
+

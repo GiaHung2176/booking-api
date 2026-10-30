@@ -34,3 +34,9 @@ build/
 
 docs/
 CLAUDE.md
+
+### Secrets ###
+.env
+
+### Learning tests (chỉ giữ ở máy) ###
+src/test/java/com/giahung/booking/learning/
