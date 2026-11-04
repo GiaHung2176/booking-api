@@ -49,4 +49,10 @@ public class VenueService {
         venue.update(venueRequest.name(),venueRequest.address(), venueRequest.city());
         return toResponse(venue);
     }
+
+    public void delete(Long id){
+        Venue venue =getVenueOrThrow(id);
+        venueRepository.delete(venue);
+    }
+
 }
